@@ -3,30 +3,56 @@ title: Photo Galleries
 layout: default
 ---
 
+<!-- todo: move this style info to separate file and include in layout header -->
+<style>
+    .gallery-image {
+        background: #000 center center;
+        background-size: cover;
+        border-radius: 10px;
+        height: 90vh;
+        position: relative;
+    }
+    .gallery-caption {
+        background-color: rgba(0,0,0,0.75);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        border-radius: 0px 0px 10px 10px / 0px 0px 10px 10px;
+    }
+    .col-md-4 {
+        padding: 10px;
+        color: #eee;
+    }
+    .col-md-4 a {
+        color: #eee;
+    }
+</style>
+
 <div style="container-fluid">
 <!--  <div class="row">-->
-    <div class="col-md-4" style="padding: 10px">
-        <a href="/galleries/engagement" style="color: #eee">
-            <div style="background: url('/images/engagement_cover.jpg') center center; background-size: cover; border-radius: 10px; height: 90vh; position: relative;">
-              <div style="background: rgba(0,0,0,0.75); position: absolute; bottom: 0; width: 100%; padding: 20px; border-radius: 0px 0px 10px 10px / 0px 0px 10px 10px;">
+    <div class="col-md-4">
+        <a href="/galleries/engagement">
+            <div class="gallery-image" style="background-image: url('/images/engagement_cover.jpg')">
+              <div class="gallery-caption">
                   <h3>Engagement</h3>
                   <p>A friend with a camera, a flower-filled conservatory garden, and a recently engaged happy couple.</p>
               </div>
             </div>
         </a>
     </div>
-    <div class="col-md-4" style="padding: 10px; color: #eee">
-          <div style="background:url('/images/wedding_cover.jpg') center center; background-size: cover; border-radius: 10px; height: 90vh; position: relative;">
-            <div style="background: rgba(0,0,0,0.75); position: absolute; bottom: 0; width: 100%; padding: 20px; border-radius: 0px 0px 10px 10px / 0px 0px 10px 10px">
+    <div class="col-md-4">
+          <div class="gallery-image" style="background-image: url('/images/wedding_cover.jpg')">
+            <div class="gallery-caption">
                 <h3>Wedding (coming soon)</h3>
                 <p>A spectacular evening with family, friends, cakes that were lies, and bowls of petunias.</p>
             </div>
           </div>
     </div>
-    <div class="col-md-4" style="padding: 10px"> 
-      <a href="/galleries/honeymoon" style="color: #eee">
-          <div style="background:url('/images/honeymoon_cover.jpg') center center; background-size: cover; border-radius: 10px; height: 90vh; position: relative;">
-            <div style="background: rgba(0,0,0,0.75); position: absolute; bottom: 0; width: 100%; padding: 20px; border-radius: 0px 0px 10px 10px / 0px 0px 10px 10px">
+    <div class="col-md-4"> 
+      <a href="/galleries/honeymoon">
+          <div class="gallery-image" style="background-image: url('/images/honeymoon_cover.jpg')">
+            <div class="gallery-caption">
                   <h3>Honeymoon</h3>
                   <p>Amazing memories of a Tahitian infinity pool, kiwis, driving on the left, and Gollum.</p>
             </div>
